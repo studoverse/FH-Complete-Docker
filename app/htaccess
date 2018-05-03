@@ -1,0 +1,11 @@
+AuthBasicProvider ldap
+AuthName "FH Complete"
+AuthType Basic
+AuthLDAPURL "ldap://ldap:389/dc=ldap?uid?one?objectclass=posixAccount"
+AuthLDAPGroupAttributeIsDN Off
+AuthLDAPGroupAttribute memberuid
+Require valid-user
+php_flag display_startup_errors on
+php_flag display_errors on
+php_flag html_errors on
+php_flag log_errors on

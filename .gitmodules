@@ -1,0 +1,8 @@
+[submodule "app/FHC-Core"]
+	path = app/FHC-Core
+	url = git@github.com:FH-Complete/FHC-Core.git
+	branch = master
+[submodule "app/FHC-AddOn-LDAP"]
+	path = app/FHC-AddOn-LDAP
+	url = git@github.com:FH-Complete/FHC-AddOn-LDAP.git
+	branch = master

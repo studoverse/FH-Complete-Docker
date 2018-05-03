@@ -1,0 +1,22 @@
+version: '3'
+services:
+  postgres:
+    build:
+      context: ./postgres
+    ports:
+      - 5432:5432
+    container_name: postgres
+
+  ldap:
+    build:
+      context: ./ldap
+    ports:
+      - 389:389
+    container_name: ldap
+
+  fhcomplete:
+    build:
+      context: ./app
+    ports:
+      - 8080:80
+    container_name: fhcomplete

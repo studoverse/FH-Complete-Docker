@@ -1,0 +1,12 @@
+dn: uid=23807,dc=ldap
+changetype: add
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+uid: 23807
+cn: cis
+sn: cis
+homeDirectory: /home
+uidNumber: 23807
+gidNumber: 14564100
+userPassword: admin
