@@ -39,5 +39,7 @@ RUN cd /var/www/html/ && \
     chgrp www-data application/tmp/ application/config/extensions/ application/controllers/extensions/ application/helpers/extensions/ application/hooks/extensions/ application/libraries/extensions/ application/models/extensions/ application/views/extensions/ application/widgets/extensions/ && \
     chmod 775 application/tmp/ application/config/extensions/ application/controllers/extensions/ application/helpers/extensions/ application/hooks/extensions/ application/libraries/extensions/ application/models/extensions/ application/views/extensions/ application/widgets/extensions/
 
-RUN service apache2 restart
-CMD ["sleep", "3600000"]
+COPY start.sh /start.sh
+RUN ["chmod", "+x", "/start.sh"]
+
+CMD ["/start.sh"]
